@@ -3,6 +3,11 @@ edit:$(objects)
 	g++ -o edit $(objects)
 $(objects): fzh.h hzf.h
 
+RM = -rm -rf
 .PHONY:clean
 clean:
-	-rm edit $(objects)
+	$(RM) edit $(objects)
+cleano:
+	$(RM) $(OBJECTS) 
+cleancore:
+	$(RM) core-*
