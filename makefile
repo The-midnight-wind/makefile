@@ -8,6 +8,6 @@ RM = -rm -rf
 clean:
 	$(RM) edit $(objects)
 cleano:
-	$(RM) $(OBJECTS) 
+	$(RM) $(objects) 
 cleancore:
 	$(RM) core-*
